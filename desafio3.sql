@@ -9,4 +9,5 @@ FROM
         INNER JOIN
     SpotifyClone.musicas AS m ON m.musica_id = h.musica_id
 GROUP BY u.usuario
+
 ORDER BY u.usuario;
