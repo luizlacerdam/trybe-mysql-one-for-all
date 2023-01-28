@@ -1,6 +1,6 @@
 SELECT 
     m.musica AS cancao,
-    sum(h.musica_id) AS reproducoes
+    COUNT(h.musica_id) AS reproducoes
     FROM
     SpotifyClone.musicas AS m
         INNER JOIN
